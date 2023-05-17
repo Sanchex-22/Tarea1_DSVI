@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imagenView"
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
+            android:adjustViewBounds="true"
+            android:background="#C5C3C3"
+            app:shapeAppearance="@style/roundedImageView"
+            app:srcCompat="@drawable/comida"></com.google.android.material.imageview.ShapeableImageView>
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/search_box"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Search Food..."
+        android:inputType="text"
+        android:maxLines="1"
+        android:textColor="@android:color/black"
+        android:textSize="15dp"
+        android:paddingStart="14dp"
+        android:paddingEnd="16dp"
+        android:drawableStart="@drawable/search_bar"
+        android:drawablePadding="8dp"
+        android:background="@drawable/rounded_edit_text"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/relativeLayout"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="30px"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="180dp"
+            android:layout_marginRight="180dp"
+            android:background="@drawable/color1"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Fast Food"
+            android:textColor="#534126"
+            android:textSize="30dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#878383"
+            android:text="Only today this fast food offer"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="150dp"
+            android:background="@drawable/btn_uno"
+            android:gravity="center"
+            android:text="$5.00"
+            android:textColor="@color/orange" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#534126"
+            android:text="Lorem ipsum dolor sit amet,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        "
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:backgroundTint="@color/orange"
+            android:text="ORDER NOW"/>
+    </LinearLayout>
+
+</RelativeLayout>
