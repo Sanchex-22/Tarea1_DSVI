@@ -1,3 +1,0 @@
-use mysql;
-ALTER USER 'root'@'localhost' INDENTIFIED BY '1234';
-FLULSH PRIVELEGES;
